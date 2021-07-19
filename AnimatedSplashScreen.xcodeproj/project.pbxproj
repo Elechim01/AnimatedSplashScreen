@@ -11,6 +11,8 @@
 		C48FF16226A616240062F55F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FF16126A616240062F55F /* ContentView.swift */; };
 		C48FF16426A616250062F55F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48FF16326A616250062F55F /* Assets.xcassets */; };
 		C48FF16726A616250062F55F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48FF16626A616250062F55F /* Preview Assets.xcassets */; };
+		C48FF16F26A616EF0062F55F /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FF16E26A616EF0062F55F /* SplashScreen.swift */; };
+		C48FF17126A6265B0062F55F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FF17026A6265B0062F55F /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		C48FF16126A616240062F55F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C48FF16326A616250062F55F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C48FF16626A616250062F55F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C48FF16E26A616EF0062F55F /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		C48FF17026A6265B0062F55F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C48FF17226A62A520062F55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,8 @@
 		C48FF15E26A616240062F55F /* AnimatedSplashScreen */ = {
 			isa = PBXGroup;
 			children = (
+				C48FF17226A62A520062F55F /* Info.plist */,
+				C48FF16D26A616DB0062F55F /* View */,
 				C48FF15F26A616240062F55F /* AnimatedSplashScreenApp.swift */,
 				C48FF16126A616240062F55F /* ContentView.swift */,
 				C48FF16326A616250062F55F /* Assets.xcassets */,
@@ -65,6 +72,15 @@
 				C48FF16626A616250062F55F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C48FF16D26A616DB0062F55F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C48FF16E26A616EF0062F55F /* SplashScreen.swift */,
+				C48FF17026A6265B0062F55F /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48FF16F26A616EF0062F55F /* SplashScreen.swift in Sources */,
 				C48FF16226A616240062F55F /* ContentView.swift in Sources */,
+				C48FF17126A6265B0062F55F /* Home.swift in Sources */,
 				C48FF16026A616240062F55F /* AnimatedSplashScreenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,9 +290,12 @@
 				DEVELOPMENT_TEAM = G7DSPSWXXC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimatedSplashScreen/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = AnimatedSplashScreen;
+				INFOPLIST_KEY_CFBundleName = AnimatedSplashScreen;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -302,9 +323,12 @@
 				DEVELOPMENT_TEAM = G7DSPSWXXC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimatedSplashScreen/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = AnimatedSplashScreen;
+				INFOPLIST_KEY_CFBundleName = AnimatedSplashScreen;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
